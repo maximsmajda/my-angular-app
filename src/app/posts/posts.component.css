@@ -1,0 +1,25 @@
+.posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-width: 640px;
+
+	margin: 0 auto;
+}
+
+.card {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.card:first-child {
+	margin-top: 24px;
+}
+
+.post-buttons {
+	justify-content: space-between;
+}
+
+.subtitle {
+	margin-bottom: 12px;
+}

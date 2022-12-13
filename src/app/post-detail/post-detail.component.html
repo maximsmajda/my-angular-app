@@ -1,0 +1,33 @@
+<div class="post-detail">
+	<mat-card *ngIf="post" class="card">
+		<mat-card-actions>
+			<a routerLink="/posts">
+				<button mat-button>
+					<mat-icon aria-hidden="false" aria-label="Home icon" fontIcon="home"></mat-icon>
+					Back to main page
+				</button>
+			</a>
+		</mat-card-actions>
+
+		<mat-card-header>
+			<mat-card-title>{{ post.title | uppercase}}</mat-card-title>
+			<mat-card-subtitle class="subtitle">{{ getUserFromId(post.userId) }}</mat-card-subtitle>
+		</mat-card-header>
+
+		<mat-card-content>
+			<p>{{ post.body }}</p>
+			<mat-divider></mat-divider>
+		</mat-card-content>
+		
+		<mat-card-header>
+			<mat-card-title>Comments</mat-card-title>
+		</mat-card-header>
+		<mat-card-content>
+			<ul *ngFor="let comment of comments">
+				<li>
+					<post-comment [postComment]="comment"></post-comment>
+				</li>
+			</ul>
+		</mat-card-content>
+	</mat-card>
+</div>
