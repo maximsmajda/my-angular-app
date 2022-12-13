@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
-Live demo [here]()
+Live demo [here](https://maximsmajda.github.io/my-angular-app)
 
 ## Development server
 
